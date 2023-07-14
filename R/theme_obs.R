@@ -1,3 +1,16 @@
+#' Apply ONSV theme to ggplot object
+#'
+#' `theme_obs()` is used to apply the ONSV theme to a ggplot graphics.
+#'
+#' @return A custom `theme()` object.
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(data = iris, aes(x = Sepal.Width, y = Sepal.Length)) +
+#'   geom_point() +
+#'   theme_obs()
 theme_obs <- function() {
   font <- "Helvetica"
 
