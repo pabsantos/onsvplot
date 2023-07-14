@@ -1,0 +1,53 @@
+theme_obs <- function() {
+  font <- "Helvetica"
+
+  ggplot2::theme(
+    plot.title = ggplot2::element_text(
+      family = font,
+      size = 14,
+      face = "bold",
+      color = "grey10"
+    ),
+    plot.subtitle = ggplot2::element_text(
+      family = font,
+      size = 12,
+      margin = ggplot2::margin(t = 5, r = 0, b = 5, l = 0),
+      color = "grey20"
+    ),
+    legend.position = "top",
+    legend.justification = "left",
+    legend.box.just = "left",
+    legend.background = ggplot2::element_blank(),
+    legend.title = ggplot2::element_blank(),
+    legend.key = ggplot2::element_blank(),
+    legend.text = ggplot2::element_text(
+      family = font,
+      size = 10,
+      color = "grey20"
+    ),
+    legend.margin = ggplot2::margin(t = 0, r = 0, b = 0, l = -10),
+    axis.title = ggplot2::element_text(
+      family = font,
+      size = 10,
+      color = "grey10"
+    ),
+    axis.ticks = ggplot2::element_blank(),
+    axis.text = ggplot2::element_text(
+      family = font,
+      size = 9,
+      color = "grey30"
+    ),
+    panel.grid.minor = ggplot2::element_blank(),
+    panel.grid.major.y = ggplot2::element_line(
+      color = "#cbcbcb",
+      linewidth = 0.4
+    ),
+    panel.grid.major.x = ggplot2::element_line(
+      color = "#cbcbcb",
+      linewidth = 0.4
+    ),
+    panel.background = ggplot2::element_rect(color = "white", fill = "white"),
+    strip.background = ggplot2::element_rect(fill = "white"),
+    strip.text = ggplot2::element_text(size = 12, hjust = 0)
+  )
+}
