@@ -4,6 +4,8 @@
 # obsplot
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/pabsantos/obsplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/pabsantos/obsplot/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of obsplot is to …
