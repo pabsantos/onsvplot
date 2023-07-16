@@ -9,47 +9,77 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  fig.width = 6,
+  fig.height = 3.7,
+  dpi = 300
 )
 ```
 
-# obsplot <img src="man/figures/logo.png" align="right" height="139" alt="" />
+# obsplot <img src="man/figures/logo.png" align="right" height="139"/>
 
 <!-- badges: start -->
+
 [![R-CMD-check](https://github.com/pabsantos/obsplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/pabsantos/obsplot/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
-The goal of obsplot is to ...
+The goal of `obsplot` is to provide ggplot theme and color elements to help create graphics in the style of the [Observatório Nacional de Segurança Viária](www.onsv.org.br).
+
+## Overview
+
+This package provides two main functions and a palette of colors:
+
+-   `theme_obs()`: Apply the ONSV theme to a ggplot object;
+-   `scale_discrete_obs()`: Apply the ONSV color palette to a ggplot object;
+-   `obs_palette`: A data object which provides the full palette of colors, including its hex codes.
 
 ## Installation
 
-You can install the development version of obsplot like so:
+You can install the development version of `obsplot` like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+remotes::install_github("pabsantos/obsplot")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to apply the functions included in this package. First, a basic ggplot graphics:
 
-```{r example}
+```{r example-1}
 library(obsplot)
-## basic example code
+library(ggplot2)
+
+plot1 <- ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + geom_point()
+
+plot1
+
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Then, apply `theme_obs()` to change the theme of the plot and `scale_discrete_obs()` to change the colors:
 
-```{r cars}
-summary(cars)
+```{r example-2}
+plot1 + theme_obs() + scale_discrete_obs()
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+If only one color is necessary in the plot, it is possible to use one of the colors included in the `obs_palette` object;
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+```{r example-3}
+obs_palette
 ```
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+applying directly to the `color` or `fill` of the `geom:`
+
+```{r example-4}
+ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point(color = obs_palette$yellow) +
+  theme_obs()
+```
+
+## Citation
+
+If you want to cite this package, you can cite as:
+
+```{r citation, echo=FALSE}
+citation("obsplot")
+```

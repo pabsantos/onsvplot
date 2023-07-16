@@ -1,52 +1,111 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# obsplot <img src="man/figures/logo.png" align="right" height="139" alt="" />
+# obsplot <img src="man/figures/logo.png" align="right" height="139"/>
 
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/pabsantos/obsplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/pabsantos/obsplot/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
-The goal of obsplot is to …
+The goal of `obsplot` is to provide ggplot theme and color elements to
+help create graphics in the style of the [Observatório Nacional de
+Segurança Viária](www.onsv.org.br).
+
+## Overview
+
+This package provides two main functions and a palette of colors:
+
+- `theme_obs()`: Apply the ONSV theme to a ggplot object;
+- `scale_discrete_obs()`: Apply the ONSV color palette to a ggplot
+  object;
+- `obs_palette`: A data object which provides the full palette of
+  colors, including its hex codes.
 
 ## Installation
 
-You can install the development version of obsplot like so:
+You can install the development version of `obsplot` like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+remotes::install_github("pabsantos/obsplot")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to apply the functions
+included in this package. First, a basic ggplot graphics:
 
 ``` r
 library(obsplot)
-## basic example code
+library(ggplot2)
+
+plot1 <- ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + geom_point()
+
+plot1
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+<img src="man/figures/README-example-1-1.png" width="100%" />
+
+Then, apply `theme_obs()` to change the theme of the plot and
+`scale_discrete_obs()` to change the colors:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+plot1 + theme_obs() + scale_discrete_obs()
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+<img src="man/figures/README-example-2-1.png" width="100%" />
 
-You can also embed plots, for example:
+If only one color is necessary in the plot, it is possible to use one of
+the colors included in the `obs_palette` object;
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+``` r
+obs_palette
+#> $blue
+#> [1] "#00496d"
+#> 
+#> $yellow
+#> [1] "#f7951d"
+#> 
+#> $red
+#> [1] "#d51f29"
+#> 
+#> $green
+#> [1] "#1fa149"
+#> 
+#> $pink
+#> [1] "#ec0d6b"
+#> 
+#> $orange
+#> [1] "#f05f22"
+```
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+applying directly to the `color` or `fill` of the `geom:`
+
+``` r
+ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point(color = obs_palette$yellow) +
+  theme_obs()
+```
+
+<img src="man/figures/README-example-4-1.png" width="100%" />
+
+## Citation
+
+If you want to cite this package, you can cite as:
+
+    #> To cite package 'obsplot' in publications use:
+    #> 
+    #>   Santos PAB (2023). _obsplot: Apply ONSV Style for Ggplot Graphics_. R
+    #>   package version 0.0.0.9000,
+    #>   <https://www.github.com/pabsantos/obsplot>.
+    #> 
+    #> A BibTeX entry for LaTeX users is
+    #> 
+    #>   @Manual{,
+    #>     title = {obsplot: Apply ONSV Style for Ggplot Graphics},
+    #>     author = {Pedro Augusto Borges Santos},
+    #>     year = {2023},
+    #>     note = {R package version 0.0.0.9000},
+    #>     url = {https://www.github.com/pabsantos/obsplot},
+    #>   }
