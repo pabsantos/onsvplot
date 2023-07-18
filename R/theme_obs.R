@@ -12,7 +12,11 @@
 #'   geom_point() +
 #'   theme_obs()
 theme_obs <- function() {
-  font <- "Helvetica"
+  if (.Platform$OS.type == "windows") {
+    font <- "sans"
+  } else {
+    font <- "Helvetica"
+  }
 
   ggplot2::theme(
     plot.title = ggplot2::element_text(
