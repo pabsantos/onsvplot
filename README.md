@@ -97,7 +97,7 @@ If you want to cite this package, you can cite as:
     #> To cite package 'obsplot' in publications use:
     #> 
     #>   Santos PAB (2023). _obsplot: Apply ONSV Style for Ggplot Graphics_. R
-    #>   package version 0.1.0, <https://www.github.com/pabsantos/obsplot>.
+    #>   package version 0.1.1, <https://www.github.com/pabsantos/obsplot>.
     #> 
     #> A BibTeX entry for LaTeX users is
     #> 
@@ -105,6 +105,6 @@ If you want to cite this package, you can cite as:
     #>     title = {obsplot: Apply ONSV Style for Ggplot Graphics},
     #>     author = {Pedro Augusto Borges Santos},
     #>     year = {2023},
-    #>     note = {R package version 0.1.0},
+    #>     note = {R package version 0.1.1},
     #>     url = {https://www.github.com/pabsantos/obsplot},
     #>   }
