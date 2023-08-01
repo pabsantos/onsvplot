@@ -14,7 +14,10 @@
 #'   theme_obs() +
 #'   scale_discrete_obs()
 scale_discrete_obs <- function() {
-  palette <- c("#00496d", "#f7951d", "#d51f29", "#1fa149", "#ec0d6b", "#f05f22")
+  palette <- c(
+    "#00496d", "#f7951d", "#d51f29", "#1fa149", "#ec0d6b", "#f05f22",
+    "#99B6C5", "#FCD5A5", "#EEA5A9", "#A5D9B6", "#F79EC4", "#F9BFA7"
+  )
   ggplot2::scale_discrete_manual(
     aesthetics = c("color", "fill"),
     values = palette
