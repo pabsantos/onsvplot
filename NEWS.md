@@ -1,3 +1,7 @@
+# obsplot 0.1.3
+
+* Fix `obs_palette` not loading properly all 12 colors.
+
 # obsplot 0.1.2
 
 * Add new colors to `scale_discrete_obs()` and `obs_palette`, from 6 to 12. (#2)
