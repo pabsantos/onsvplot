@@ -7,7 +7,8 @@
 \format{
 \subsection{\code{obs_palette}}{
 
-A list with 6 colors: blue, yellow, red, green, pink, and orange
+A list with 12 colors: blue, yellow, red, green, pink, orange, lightblue,
+lightyellow, lightred, lightgreen, lightpink, lightorange, lightblue
 }
 }
 \source{

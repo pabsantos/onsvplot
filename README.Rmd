@@ -50,7 +50,10 @@ This is a basic example which shows you how to apply the functions included in t
 library(obsplot)
 library(ggplot2)
 
-plot1 <- ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + geom_point()
+plot1 <- ggplot(data = iris, aes(
+  x = Sepal.Length, y = Sepal.Width, color = Species
+)) +
+  geom_point()
 
 plot1
 
@@ -59,21 +62,22 @@ plot1
 Then, apply `theme_obs()` to change the theme of the plot and `scale_discrete_obs()` to change the colors:
 
 ```{r example-2}
-plot1 + theme_obs() + scale_discrete_obs()
+theme_set(theme_obs())
+
+plot1 + scale_discrete_obs()
 ```
 
 If only one color is necessary in the plot, it is possible to use one of the colors included in the `obs_palette` object;
 
 ```{r example-3}
-obs_palette
+str(obs_palette)
 ```
 
 applying directly to the `color` or `fill` of the `geom:`
 
 ```{r example-4}
 ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
-  geom_point(color = obs_palette$yellow) +
-  theme_obs()
+  geom_point(color = obs_palette$yellow)
 ```
 
 ## Citation

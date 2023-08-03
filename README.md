@@ -40,7 +40,10 @@ included in this package. First, a basic ggplot graphics:
 library(obsplot)
 library(ggplot2)
 
-plot1 <- ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + geom_point()
+plot1 <- ggplot(data = iris, aes(
+  x = Sepal.Length, y = Sepal.Width, color = Species
+)) +
+  geom_point()
 
 plot1
 ```
@@ -51,7 +54,9 @@ Then, apply `theme_obs()` to change the theme of the plot and
 `scale_discrete_obs()` to change the colors:
 
 ``` r
-plot1 + theme_obs() + scale_discrete_obs()
+theme_set(theme_obs())
+
+plot1 + scale_discrete_obs()
 ```
 
 <img src="man/figures/README-example-2-1.png" width="100%" />
@@ -60,32 +65,27 @@ If only one color is necessary in the plot, it is possible to use one of
 the colors included in the `obs_palette` object;
 
 ``` r
-obs_palette
-#> $blue
-#> [1] "#00496d"
-#> 
-#> $yellow
-#> [1] "#f7951d"
-#> 
-#> $red
-#> [1] "#d51f29"
-#> 
-#> $green
-#> [1] "#1fa149"
-#> 
-#> $pink
-#> [1] "#ec0d6b"
-#> 
-#> $orange
-#> [1] "#f05f22"
+str(obs_palette)
+#> List of 12
+#>  $ blue       : chr "#00496d"
+#>  $ yellow     : chr "#f7951d"
+#>  $ red        : chr "#d51f29"
+#>  $ green      : chr "#1fa149"
+#>  $ pink       : chr "#ec0d6b"
+#>  $ orange     : chr "#f05f22"
+#>  $ lightblue  : chr "#99B6C5"
+#>  $ lightyellow: chr "#FCD5A5"
+#>  $ lightred   : chr "#EEA5A9"
+#>  $ lightgreen : chr "#A5D9B6"
+#>  $ lightpink  : chr "#F79EC4"
+#>  $ lightorange: chr "#F9BFA7"
 ```
 
 applying directly to the `color` or `fill` of the `geom:`
 
 ``` r
 ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
-  geom_point(color = obs_palette$yellow) +
-  theme_obs()
+  geom_point(color = obs_palette$yellow)
 ```
 
 <img src="man/figures/README-example-4-1.png" width="100%" />
@@ -97,7 +97,7 @@ If you want to cite this package, you can cite as:
     #> To cite package 'obsplot' in publications use:
     #> 
     #>   Santos PAB (2023). _obsplot: Apply ONSV Style for Ggplot Graphics_. R
-    #>   package version 0.1.1, <https://www.github.com/pabsantos/obsplot>.
+    #>   package version 0.1.2, <https://www.github.com/pabsantos/obsplot>.
     #> 
     #> A BibTeX entry for LaTeX users is
     #> 
@@ -105,6 +105,6 @@ If you want to cite this package, you can cite as:
     #>     title = {obsplot: Apply ONSV Style for Ggplot Graphics},
     #>     author = {Pedro Augusto Borges Santos},
     #>     year = {2023},
-    #>     note = {R package version 0.1.1},
+    #>     note = {R package version 0.1.2},
     #>     url = {https://www.github.com/pabsantos/obsplot},
     #>   }
