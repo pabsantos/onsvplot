@@ -23,7 +23,8 @@ theme_onsv <- function() {
       family = font,
       size = 14,
       face = "bold",
-      color = "grey10"
+      color = "grey10",
+      margin = ggplot2::margin(t = 0, r = 0, b = 5, l = 0),
     ),
     plot.subtitle = ggplot2::element_text(
       family = font,
@@ -31,6 +32,8 @@ theme_onsv <- function() {
       margin = ggplot2::margin(t = 5, r = 0, b = 5, l = 0),
       color = "grey20"
     ),
+    plot.title.position = "plot",
+    plot.caption.position = "plot",
     legend.position = "top",
     legend.justification = "left",
     legend.box.just = "left",
