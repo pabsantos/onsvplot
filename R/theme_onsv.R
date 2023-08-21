@@ -1,6 +1,6 @@
 #' Apply ONSV theme to ggplot object
 #'
-#' `theme_obs()` is used to apply the ONSV theme to a ggplot graphics.
+#' `theme_onsv()` is used to apply the ONSV theme to a ggplot graphics.
 #'
 #' @return A custom `theme()` object.
 #' @export
@@ -10,8 +10,8 @@
 #'
 #' ggplot(data = iris, aes(x = Sepal.Width, y = Sepal.Length)) +
 #'   geom_point() +
-#'   theme_obs()
-theme_obs <- function() {
+#'   theme_onsv()
+theme_onsv <- function() {
   if (.Platform$OS.type == "windows") {
     font <- "sans"
   } else {
