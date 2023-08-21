@@ -1,5 +1,10 @@
 # onsvplot 0.2.1
 
+* Add two new parameters to `theme_onsv()` (#3): `plot.title.position = "plot"` and `plot.caption.position = "plot"`.
+
+* Add bottom margin to `title` element.
+
+
 # onsvplot 0.2.0
 
 * Updates the package name to `onsvplot`. The `obsplot` package already exists, therefore it was necessary to change the previous name. (#4)
