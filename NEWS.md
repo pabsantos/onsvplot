@@ -1,3 +1,5 @@
+# onsvplot 0.2.1
+
 # onsvplot 0.2.0
 
 * Updates the package name to `onsvplot`. The `obsplot` package already exists, therefore it was necessary to change the previous name. (#4)
