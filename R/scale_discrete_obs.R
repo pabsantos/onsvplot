@@ -11,7 +11,7 @@
 #'
 #' ggplot(data = iris, aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
 #'   geom_point() +
-#'   theme_obs() +
+#'   theme_onsv() +
 #'   scale_discrete_obs()
 scale_discrete_obs <- function() {
   palette <- c(
