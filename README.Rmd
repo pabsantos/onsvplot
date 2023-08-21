@@ -82,7 +82,7 @@ ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
 
 ## Citation
 
-If you want to cite this package, you can cite as:
+If you want to cite this package, you can cite as :
 
 ```{r citation, echo=FALSE}
 citation("onsvplot")
