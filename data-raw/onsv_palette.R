@@ -1,4 +1,4 @@
-obs_palette <- list(
+onsv_palette <- list(
   blue = "#00496d",
   yellow = "#f7951d",
   red = "#d51f29",
@@ -13,4 +13,4 @@ obs_palette <- list(
   lightorange = "#F9BFA7"
 )
 
-usethis::use_data(obs_palette, overwrite = TRUE)
+usethis::use_data(onsv_palette, overwrite = TRUE)
