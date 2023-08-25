@@ -4,7 +4,10 @@
 \alias{theme_onsv}
 \title{Apply ONSV theme to ggplot object}
 \usage{
-theme_onsv()
+theme_onsv(basesize = 10)
+}
+\arguments{
+\item{basesize}{A number to define font base size}
 }
 \value{
 A custom \code{theme()} object.

@@ -2,6 +2,8 @@
 #'
 #' `theme_onsv()` is used to apply the ONSV theme to a ggplot graphics.
 #'
+#' @param basesize A number to define font base size
+#'
 #' @return A custom `theme()` object.
 #' @export
 #'
@@ -11,7 +13,7 @@
 #' ggplot(data = iris, aes(x = Sepal.Width, y = Sepal.Length)) +
 #'   geom_point() +
 #'   theme_onsv()
-theme_onsv <- function() {
+theme_onsv <- function(basesize = 10) {
   if (.Platform$OS.type == "windows") {
     font <- "sans"
   } else {
@@ -21,14 +23,14 @@ theme_onsv <- function() {
   ggplot2::theme(
     plot.title = ggplot2::element_text(
       family = font,
-      size = 14,
+      size = basesize + 4,
       face = "bold",
       color = "grey10",
       margin = ggplot2::margin(t = 0, r = 0, b = 5, l = 0),
     ),
     plot.subtitle = ggplot2::element_text(
       family = font,
-      size = 12,
+      size = basesize + 2,
       margin = ggplot2::margin(t = 5, r = 0, b = 5, l = 0),
       color = "grey20"
     ),
@@ -42,19 +44,19 @@ theme_onsv <- function() {
     legend.key = ggplot2::element_blank(),
     legend.text = ggplot2::element_text(
       family = font,
-      size = 10,
+      size = basesize,
       color = "grey20"
     ),
     legend.margin = ggplot2::margin(t = 0, r = 0, b = 0, l = -10),
     axis.title = ggplot2::element_text(
       family = font,
-      size = 10,
+      size = basesize,
       color = "grey10"
     ),
     axis.ticks = ggplot2::element_blank(),
     axis.text = ggplot2::element_text(
       family = font,
-      size = 9,
+      size = basesize - 1,
       color = "grey30"
     ),
     panel.grid.minor = ggplot2::element_blank(),
@@ -68,6 +70,6 @@ theme_onsv <- function() {
     ),
     panel.background = ggplot2::element_rect(color = "white", fill = "white"),
     strip.background = ggplot2::element_rect(fill = "white"),
-    strip.text = ggplot2::element_text(size = 12, hjust = 0)
+    strip.text = ggplot2::element_text(size = basesize + 2, hjust = 0)
   )
 }
