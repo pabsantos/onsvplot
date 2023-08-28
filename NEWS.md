@@ -1,9 +1,12 @@
+# onsvplot 0.2.2
+
+* Add new parameter to `theme_onsv()` (#7): Now it is possible to change `basesize` of the font used in the plot
+
 # onsvplot 0.2.1
 
 * Add two new parameters to `theme_onsv()` (#3): `plot.title.position = "plot"` and `plot.caption.position = "plot"`.
 
 * Add bottom margin to `title` element.
-
 
 # onsvplot 0.2.0
 
