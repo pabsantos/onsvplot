@@ -92,12 +92,12 @@ ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
 
 ## Citation
 
-If you want to cite this package, you can cite as :
+If you want to cite this package, you can cite as:
 
     #> To cite package 'onsvplot' in publications use:
     #> 
     #>   Santos PAB (2023). _onsvplot: Apply ONSV Style for Ggplot Graphics_.
-    #>   R package version 0.2.1, <https://www.github.com/pabsantos/onsvplot>.
+    #>   R package version 0.2.2, <https://www.github.com/pabsantos/onsvplot>.
     #> 
     #> A BibTeX entry for LaTeX users is
     #> 
@@ -105,6 +105,6 @@ If you want to cite this package, you can cite as :
     #>     title = {onsvplot: Apply ONSV Style for Ggplot Graphics},
     #>     author = {Pedro Augusto Borges Santos},
     #>     year = {2023},
-    #>     note = {R package version 0.2.1},
+    #>     note = {R package version 0.2.2},
     #>     url = {https://www.github.com/pabsantos/onsvplot},
     #>   }
