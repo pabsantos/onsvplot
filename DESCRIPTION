@@ -1,6 +1,6 @@
 Package: onsvplot
 Title: Apply ONSV Style for Ggplot Graphics
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: 
     person(
         given = c("Pedro", "Augusto", "Borges"), 
