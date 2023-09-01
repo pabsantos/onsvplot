@@ -31,6 +31,12 @@ You can install the development version of `onsvplot` like so:
 remotes::install_github("pabsantos/onsvplot")
 ```
 
+Or the CRAN version:
+
+``` r
+# install.packages("onsvplot")
+```
+
 ## Example
 
 This is a basic example which shows you how to apply the functions

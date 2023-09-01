@@ -42,6 +42,12 @@ You can install the development version of `onsvplot` like so:
 remotes::install_github("pabsantos/onsvplot")
 ```
 
+Or the CRAN version:
+
+```{r}
+# install.packages("onsvplot")
+```
+
 ## Example
 
 This is a basic example which shows you how to apply the functions included in this package. First, a basic ggplot graphics:
@@ -87,3 +93,4 @@ If you want to cite this package, you can cite as:
 ```{r citation, echo=FALSE}
 citation("onsvplot")
 ```
+
