@@ -1,5 +1,5 @@
 Package: onsvplot
-Title: Apply ONSV Style for Ggplot Graphics
+Title: Apply ONSV Style for 'ggplot2' Graphics
 Version: 0.2.2
 Authors@R: 
     c(person(
@@ -9,7 +9,7 @@ Authors@R:
         role = c("aut", "cre"),
         comment = c(ORCID = "0000-0003-0550-4251")),
     person("ONSV - National Road Safety Observatory", role = c("cph", "fnd")))
-Description: Helps create ggplot2 charts in the style used by the National 
+Description: Helps create 'ggplot2' charts in the style used by the National 
     Road Safety Observatory (ONSV). The package includes functions to 
     customize ggplot objects with new theme and colors.
 License: MIT + file LICENSE
