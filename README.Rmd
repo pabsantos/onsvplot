@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of `onsvplot` is to provide ggplot theme and color elements to help create graphics in the style of the [Observatório Nacional de Segurança Viária](www.onsv.org.br).
+The goal of `onsvplot` is to provide ggplot theme and color elements to help create graphics in the style of the [National Observatory for Road Safety](https://www.onsv.org.br/).
 
 ## Overview
 

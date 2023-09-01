@@ -10,8 +10,8 @@
 <!-- badges: end -->
 
 The goal of `onsvplot` is to provide ggplot theme and color elements to
-help create graphics in the style of the [Observatório Nacional de
-Segurança Viária](www.onsv.org.br).
+help create graphics in the style of the [National Observatory for Road
+Safety](https://www.onsv.org.br/).
 
 ## Overview
 
@@ -103,8 +103,8 @@ If you want to cite this package, you can cite as:
     #> To cite package 'onsvplot' in publications use:
     #> 
     #>   Santos PAB (2023). _onsvplot: National Road Safety Observatory (ONSV)
-    #>   Style for 'ggplot2' Graphics_. R package version 0.2.2,
-    #>   <https://www.github.com/pabsantos/onsvplot>.
+    #>   Style for 'ggplot2' Graphics_. R package version 0.3.0,
+    #>   <https://github.com/pabsantos/onsvplot/>.
     #> 
     #> A BibTeX entry for LaTeX users is
     #> 
@@ -112,6 +112,6 @@ If you want to cite this package, you can cite as:
     #>     title = {onsvplot: National Road Safety Observatory (ONSV) Style for 'ggplot2' Graphics},
     #>     author = {Pedro Augusto Borges Santos},
     #>     year = {2023},
-    #>     note = {R package version 0.2.2},
-    #>     url = {https://www.github.com/pabsantos/onsvplot},
+    #>     note = {R package version 0.3.0},
+    #>     url = {https://github.com/pabsantos/onsvplot/},
     #>   }
