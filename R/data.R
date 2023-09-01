@@ -6,6 +6,6 @@
 #' A list with 12 colors: blue, yellow, red, green, pink, orange, lightblue,
 #' lightyellow, lightred, lightgreen, lightpink, lightorange, lightblue
 #'
-#' @source <https://onsv.org.br>
+#' @source <https://onsv.org.br/>
 
 "onsv_palette"
