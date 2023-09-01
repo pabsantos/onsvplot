@@ -22,5 +22,5 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Date: 2023-09-01
-URL: https://www.github.com/pabsantos/onsvplot/
-BugReports: https://www.github.com/pabsantos/onsvplot/issues/
+URL: https://github.com/pabsantos/onsvplot/
+BugReports: https://github.com/pabsantos/onsvplot/issues/

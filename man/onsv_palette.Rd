@@ -12,7 +12,7 @@ lightyellow, lightred, lightgreen, lightpink, lightorange, lightblue
 }
 }
 \source{
-\url{https://onsv.org.br}
+\url{https://www.onsv.org.br/}
 }
 \usage{
 onsv_palette
