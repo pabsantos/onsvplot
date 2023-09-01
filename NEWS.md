@@ -1,3 +1,5 @@
+# onsvplot 0.3.0
+
 # onsvplot 0.2.2
 
 * Add new parameter to `theme_onsv()` (#7): Now it is possible to change `basesize` of the font used in the plot
