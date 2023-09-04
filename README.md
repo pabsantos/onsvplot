@@ -103,7 +103,7 @@ If you want to cite this package, you can cite as:
     #> To cite package 'onsvplot' in publications use:
     #> 
     #>   Santos PAB (2023). _onsvplot: National Road Safety Observatory (ONSV)
-    #>   Style for 'ggplot2' Graphics_. R package version 0.3.0,
+    #>   Style for 'ggplot2' Graphics_. R package version 0.3.1,
     #>   <https://github.com/pabsantos/onsvplot/>.
     #> 
     #> A BibTeX entry for LaTeX users is
@@ -112,6 +112,6 @@ If you want to cite this package, you can cite as:
     #>     title = {onsvplot: National Road Safety Observatory (ONSV) Style for 'ggplot2' Graphics},
     #>     author = {Pedro Augusto Borges Santos},
     #>     year = {2023},
-    #>     note = {R package version 0.3.0},
+    #>     note = {R package version 0.3.1},
     #>     url = {https://github.com/pabsantos/onsvplot/},
     #>   }
