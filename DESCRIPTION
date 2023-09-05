@@ -1,6 +1,6 @@
 Package: onsvplot
 Title: National Road Safety Observatory (ONSV) Style for 'ggplot2' Graphics
-Version: 0.3.1
+Version: 0.3.2
 Authors@R: 
     c(person(
         given = c("Pedro", "Augusto", "Borges"), 
