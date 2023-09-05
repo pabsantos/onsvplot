@@ -1,6 +1,12 @@
 ## Resubmission
 
-This is a resubmission. In this version I have fully specified the URL in README with the 'https://' protocol.
+This is a resubmission. In this version I have: 
+
+* Fully specified the URL in README with the 'https://' protocol;
+
+* Proof-read the description text;
+
+* Applied single quotes in package names.
 
 ## R CMD check results
 
