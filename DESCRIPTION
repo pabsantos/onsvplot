@@ -9,9 +9,9 @@ Authors@R:
         role = c("aut", "cre"),
         comment = c(ORCID = "0000-0003-0550-4251")),
     person("ONSV - National Road Safety Observatory", role = c("cph", "fnd")))
-Description: Helps create 'ggplot2' charts in the style used by the National 
+Description: Helps to create 'ggplot2' charts in the style used by the National 
     Road Safety Observatory (ONSV). The package includes functions to 
-    customize ggplot objects with new theme and colors.
+    customize 'ggplot2' objects with new theme and colors.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
