@@ -1,8 +1,6 @@
 # onsvplot 0.3.2
 
-# onsvplot 0.3.1
-
-# onsvplot 0.3.0
+* Released on [CRAN](https://cran.r-project.org/package=onsvplot): now it is possible to install using `install.packages("onsvplot")`. 
 
 # onsvplot 0.2.2
 

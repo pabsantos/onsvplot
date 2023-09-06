@@ -6,7 +6,10 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/pabsantos/onsvplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/pabsantos/onsvplot/actions/workflows/R-CMD-check.yaml)
-
+[![CRAN
+status](https://www.r-pkg.org/badges/version/onsvplot)](https://CRAN.R-project.org/package=onsvplot)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 The goal of `onsvplot` is to provide ggplot theme and color elements to
@@ -115,3 +118,5 @@ If you want to cite this package, you can cite as:
     #>     note = {R package version 0.3.2},
     #>     url = {https://github.com/pabsantos/onsvplot/},
     #>   }
+
+<img src="man/figures/onsv.png" align="left" width="400"/>
