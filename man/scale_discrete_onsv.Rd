@@ -4,7 +4,11 @@
 \alias{scale_discrete_onsv}
 \title{Apply ONSV color scale to ggplot object}
 \usage{
-scale_discrete_onsv()
+scale_discrete_onsv(...)
+}
+\arguments{
+\item{...}{Arguments passed on to \link[ggplot2]{scale_discrete_manual} or
+to \link[ggplot2]{discrete_scale}, on a lower level.}
 }
 \value{
 A custom scale object for ggplot objects
