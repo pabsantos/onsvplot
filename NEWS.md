@@ -1,3 +1,5 @@
+# onsvplot 0.4.1
+
 # onsvplot 0.4.0
 
 * Add new arguments to `scale_discrete_onsv`: `...`. Now it is possible to pass arguments to lower level `ggplot2` functions, such as `scale_discrete_manual` and `discrete_scale`.
