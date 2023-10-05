@@ -57,9 +57,8 @@ This is a basic example which shows you how to apply the functions included in t
 library(onsvplot)
 library(ggplot2)
 
-plot1 <- ggplot(data = iris, aes(
-  x = Sepal.Length, y = Sepal.Width, color = Species
-)) +
+plot1 <- 
+  ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
   geom_point()
 
 plot1

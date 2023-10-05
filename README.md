@@ -49,9 +49,8 @@ included in this package. First, a basic ggplot graphics:
 library(onsvplot)
 library(ggplot2)
 
-plot1 <- ggplot(data = iris, aes(
-  x = Sepal.Length, y = Sepal.Width, color = Species
-)) +
+plot1 <- 
+  ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
   geom_point()
 
 plot1
@@ -106,8 +105,9 @@ If you want to cite this package, you can cite as:
     #> To cite package 'onsvplot' in publications use:
     #> 
     #>   Santos PAB (2023). _onsvplot: National Road Safety Observatory (ONSV)
-    #>   Style for 'ggplot2' Graphics_. R package version 0.3.2,
-    #>   <https://github.com/pabsantos/onsvplot/>.
+    #>   Style for 'ggplot2' Graphics_.
+    #>   https://github.com/pabsantos/onsvplot/,
+    #>   https://pabsantos.github.io/onsvplot/.
     #> 
     #> A BibTeX entry for LaTeX users is
     #> 
@@ -115,8 +115,7 @@ If you want to cite this package, you can cite as:
     #>     title = {onsvplot: National Road Safety Observatory (ONSV) Style for 'ggplot2' Graphics},
     #>     author = {Pedro Augusto Borges Santos},
     #>     year = {2023},
-    #>     note = {R package version 0.3.2},
-    #>     url = {https://github.com/pabsantos/onsvplot/},
+    #>     note = {https://github.com/pabsantos/onsvplot/, https://pabsantos.github.io/onsvplot/},
     #>   }
 
 <img src="man/figures/onsv.png" align="left" width="400"/>
