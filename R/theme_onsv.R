@@ -2,7 +2,9 @@
 #'
 #' `theme_onsv()` is used to apply the ONSV theme to a ggplot graphics.
 #'
-#' @param basesize A number to define font base size
+#' @param base_size A number to define font base size,
+#' passed to \link[ggplot2]{theme_minimal}
+#' @param ... Arguments passed on to \link[ggplot2]{theme}
 #'
 #' @return A custom `theme()` object.
 #' @export
@@ -41,6 +43,7 @@ theme_onsv <- function(base_size = 11, ...) {
     axis.title = ggplot2::element_text(color = "grey20"),
     panel.background = ggplot2::element_rect(color = "white", fill = "white"),
     strip.background = ggplot2::element_rect(fill = "white"),
+    legend.key.size = unit(0.4, "cm"),
     ...
   )
 }
