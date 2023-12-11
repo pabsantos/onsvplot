@@ -1,6 +1,6 @@
 # onsvplot 0.5.0
 
-Add a few changes to `theme_onsv`. Now this theme is based on `ggplot2::theme_minimal`, with a few changes.
+Modifies `theme_onsv`. Now this theme is based on `ggplot2::theme_minimal`, with a few changes.
 
 * Fix missing grid coordinates in `geom_sf` maps (#21)
 
