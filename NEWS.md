@@ -1,5 +1,13 @@
 # onsvplot 0.5.0
 
+Add a few changes to `theme_onsv`. Now this theme is based on `ggplot2::theme_minimal`, with a few changes.
+
+* Fix missing grid coordinates in `geom_sf` maps (#21)
+
+* Fix small legend key size when plotting continuous values (#22)
+
+* Fix title and subtitle position, font size, font color, and font weight (#23, #24)
+
 # onsvplot 0.4.1
 
 * Change values of `legend.key.size` and `legend.text` in `theme_onsv()` (#13 and #14)
