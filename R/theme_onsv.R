@@ -41,7 +41,7 @@ theme_onsv <- function(base_size = 11, ...) {
     legend.text = ggplot2::element_text(color = "grey20"),
     legend.margin = ggplot2::margin(t = 0, r = 0, b = 0, l = -20),
     axis.title = ggplot2::element_text(color = "grey20"),
-    panel.background = ggplot2::element_rect(color = "white", fill = "white"),
+    plot.background = ggplot2::element_rect(color = "white", fill = "white"),
     strip.background = ggplot2::element_rect(fill = "white"),
     legend.key.size = ggplot2::unit(0.4, "cm"),
     ...
