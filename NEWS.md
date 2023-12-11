@@ -1,3 +1,5 @@
+# onsvplot 0.5.0
+
 # onsvplot 0.4.1
 
 * Change values of `legend.key.size` and `legend.text` in `theme_onsv()` (#13 and #14)
