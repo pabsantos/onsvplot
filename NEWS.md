@@ -1,3 +1,5 @@
+# onsvplot 0.5.1
+
 # onsvplot 0.5.0
 
 Modifies `theme_onsv`. Now this theme is based on `ggplot2::theme_minimal`, with a few changes.
